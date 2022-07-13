@@ -113,13 +113,12 @@ body {
         .row {
             display: flex;
             flex-direction: column;
-            [class*="col-"] {
-                width: 100%;
-                overflow-x: scroll;
-                display: flex;
-            }
             .col-md-3 {
+                display: flex;
                 justify-content: center;
+            }
+            .col-md-7 {
+                overflow-x: scroll;
             }
             .col-md-2 {
                 display: none;

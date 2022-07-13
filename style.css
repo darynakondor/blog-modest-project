@@ -143,17 +143,16 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .row [class*=col-] {
-    width: 100%;
-    overflow-x: scroll;
+  .container .row .col-md-3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .container .row .col-md-3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .container .row .col-md-7 {
+    overflow-x: scroll;
   }
   .container .row .col-md-2 {
     display: none;
