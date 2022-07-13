@@ -30,6 +30,7 @@ body {
                 .menu {
                     list-style: none;
                     display: flex;
+                    align-items: center;
                     margin: 0;
                     padding: 0;
                     li {
@@ -113,11 +114,11 @@ body {
         .row {
             display: flex;
             flex-direction: column;
-            .col-md-3 {
+            [class*="col-"] {
                 display: flex;
                 justify-content: center;
             }
-            .col-md-7 {
+            .menu {
                 overflow-x: scroll;
             }
             .col-md-2 {
