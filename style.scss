@@ -1,133 +1,345 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Quattrocento+Sans:wght@700&display=swap');
 @import url('./_variables.scss');
 
+
 * {
     box-sizing: border-box;
 }
-body {
+
+
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
+    .row {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+        flex-wrap: wrap;
+        align-items: center;
+        [class*="col-"] {
+            padding-left: 15px;
+            padding-right: 15px;
+        }    
+    }
 }
+
 .header {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
     background-color: #1d2126;
-    padding: 26px 0px 25px 0px;
-    .container {
-        max-width: 1170px;
-        margin: 0 auto;
-        .row {
-            display: flex;
-            align-items: center;
-            .col-md-3 {
-                width: 25%;
-                .logo {
-                    padding-left: 15px;
-                }
+    padding: 25px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        li {
+            width: 14.285714%;
+            border-radius: 2px;
+            margin-left: 11px;
+            text-transform: uppercase;
+            &:first-child {
+                margin-left: 0;
             }
-            .col-md-7 {
-                width: 58.333333%;
-                .menu {
-                    list-style: none;
-                    display: flex;
-                    align-items: center;
-                    margin: 0;
-                    padding: 0;
-                    li {
-                        color: #a4aead;
-                        border-radius: 2px;
-                        margin-left: 11px;
-                        padding: 8px 10px;
-                        text-transform: uppercase;
-                        width: 14,285714%;
-                        &:first-child {
-                            border: 2px solid #23b7a3;
-                            color: #23b7a3;
-                            margin-left: 0;
-                        }
-                        
-                        &:hover {
-                            border: 2px solid #5b6168;
-                            cursor: pointer;
-                        }
-                        &:first-child:hover {
-                            border: 2px solid #23b7a3;
-                            color: #23b7a3;
-                        }
-                        a {
-                            text-align: center;
-                            display: block;
-                            height: 30px;
-                            line-height: 30px;
-                        }
-                    }
-                }
+            &:hover {
+                border: 2px solid #5b6168;
+                display: inline;
             }
-            .col-md-2 {
-                width: 16.6666667%;
-                .header-form-search {
-                    border: 2px solid #3c4147;
-                    border-radius: 2px;
-                    height: 30px;
-                    input {
-                        background-color: transparent;
-                        border: none;
-                        width: 138px;
-                        margin-left: 8px;
-                        margin-right: 5px;
-                        padding: 0;
-                        &::placeholder {
-                            color: #a4aead;
-                            text-transform: uppercase;
-                        }
-                        &:focus {
-                            outline: none;
-                            color: #a4aead;
-                        }
-                    }
-                    button {
-                        background-image: url("images-blog(modest)/magnifying-glass.png");
-                        border: none;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-color: transparent;
-                        width: 15px;
-                        height: 12px;
-                        padding: 0;
-                        margin-top: 7px;
-                        cursor: pointer;
-                    }
-                }
+            a {
+                text-align: center;
+                display: block;
+                line-height: 30px;
+                text-decoration: none;
+                color: #a4aead;
             }
+        }
+    }
+    .header-form-search {
+        display: flex;
+        border: 2px solid #3c4147;
+        border-radius: 2px;
+        height: 30px;
+        padding: 5px;
+        input {
+            background-color: transparent;
+            border: none;
+            width: 76.3158%;
+            margin-right: 10px;
+            padding: 0;
+            &::placeholder {
+                color: #a4aead;
+                text-transform: uppercase;
+            }
+            &:focus {
+                outline: none;
+                color: #a4aead;
+            }
+        }
+        button {
+            background-image: url("images-blog(modest)/magnifying-glass.png");
+            border: none;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            width: 15px;
+            height: 12px;
+            margin-top: 2px;
+            margin-left: -5px;
+            cursor: pointer;
         }
     }
 }
 
+.main {
+    font-family: 'Quattrocento Sans', sans-serif;
+    .banner {
+        background-image: url("images-blog(modest)/slider.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 225px;
+        padding-bottom: 250px;
+        .title {
+            margin-bottom: 33px;
+            text-transform: uppercase;
+            font-size: 36px;
+            color: #ffffff;
+        }
+        .paragraph {
+            color:  #ccd0d7;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        button {
+            color: #ffffff;
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: rgba(222,180,180,0);
+            border: 2px solid #ffffff;
+            cursor: pointer;
+            &:first-child {
+                margin-right: 11px;
+            }
+            &:hover {
+                background-color: #23b7a4;
+                border: 2px solid #23b7a4;
+            }
+        }
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+}
 
+/* tablet => sm */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        .col-sm-1 {
+            flex: 0 0 8.33333%;
+            max-width: 8.33333%;
+        }
+        .col-sm-2 {
+            flex: 0 0 16.66667%;
+            max-width: 16.66667%;
+        }
+        .col-sm-3 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+        .col-sm-4 {
+            flex: 0 0 33.33333%;
+            max-width: 33.33333%;
+        }
+        .col-sm-5 {
+            flex: 0 0 41.66667%;
+            max-width: 41.66667%;
+        }
+        .col-sm-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col-sm-7 {
+            flex: 0 0 58.33333%;
+            max-width: 58.33333%;
+        }
+        .col-sm-8 {
+            flex: 0 0 66.66667%;
+            max-width: 66.66667%;
+        }
+        .col-sm-9 {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+        .col-sm-10 {
+            flex: 0 0 83.33333%;
+            max-width: 83.33333%;
+        }
+        .col-sm-11 {
+            flex: 0 0 91.66667%;
+            max-width: 91.66667%;
+        }
+        .col-sm-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+/* laptop => md */
+
+@media (min-width: 992px) {
+   
+        .container {
+            max-width: 960px;
+            .col-md-1 {
+                flex: 0 0 8.33333%;
+                max-width: 8.33333%;
+            }
+            .col-md-2 {
+                flex: 0 0 16.66667%;
+                max-width: 16.66667%;
+            }
+            .col-md-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+            .col-md-4 {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+            }
+            .col-md-5 {
+                flex: 0 0 41.66667%;
+                max-width: 41.66667%;
+            }
+            .col-md-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .col-md-7 {
+                flex: 0 0 58.33333%;
+                max-width: 58.33333%;
+            }
+            .col-md-8 {
+                flex: 0 0 66.66667%;
+                max-width: 66.66667%;
+               
+            }
+            .col-md-9 {
+                flex: 0 0 75%;
+                max-width: 75%;
+            }
+            .col-md-10 {
+                flex: 0 0 83.33333%;
+                max-width: 83.33333%;
+            }
+            .col-md-11 {
+                flex: 0 0 91.66667%;
+                max-width: 91.66667%;
+            }
+            .col-md-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .banner {
+            margin-top: -16px;
+        }
+    }
+
+
+
+/* desktop => lg */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* only mobile <767px */
 
 @media (max-width: 767px) {
     body {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     .container {
-        width: 767px;
-        .row {
+        [class*="col-"] {
             display: flex;
-            flex-direction: column;
-            [class*="col-"] {
-                display: flex;
-                justify-content: center;
-            }
-            .menu {
-                overflow-x: scroll;
-            }
-            .col-md-2 {
-                display: none;
+            justify-content: center;
+        }
+        .col-xs-1 {
+            flex: 0 0 8.33333%;
+            max-width: 8.33333%;
+        }
+        .col-xs-2 {
+            flex: 0 0 16.66667%;
+            max-width: 16.66667%;
+        }
+        .col-xs-3 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+        .col-xs-4 {
+            flex: 0 0 33.33333%;
+            max-width: 33.33333%;
+        }
+        .col-xs-5 {
+            flex: 0 0 41.66667%;
+            max-width: 41.66667%;
+        }
+        .col-xs-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col-xs-7 {
+            flex: 0 0 58.33333%;
+            max-width: 58.33333%;
+        }
+        .col-xs-8 {
+            flex: 0 0 66.66667%;
+            max-width: 66.66667%;
+        }
+        .col-xs-9 {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+        .col-xs-10 {
+            flex: 0 0 83.33333%;
+            max-width: 83.33333%;
+        }
+        .col-xs-11 {
+            flex: 0 0 91.66667%;
+            max-width: 91.66667%;
+        }
+        .col-xs-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .menu {
+            overflow-x: scroll;
+            li {
+                width: 100%;
+                height: 100%;
             }
         }
-    }    
+        .hidden-xs {
+            display: none;
+        }
+    }
+    .banner {
+        margin-top: -16px;
+    }
 }
-
-
-
-
