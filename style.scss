@@ -105,6 +105,7 @@
         background-repeat: no-repeat;
         padding-top: 225px;
         padding-bottom: 250px;
+        margin-top: -24px;
         .title {
             margin-bottom: 33px;
             text-transform: uppercase;
@@ -115,6 +116,7 @@
             color:  #ccd0d7;
             font-size: 16px;
             margin-bottom: 40px;
+            line-height: 24px;
         }
         button {
             color: #ffffff;
@@ -252,9 +254,6 @@
                 max-width: 100%;
             }
         }
-        .banner {
-            margin-top: -16px;
-        }
     }
 
 
@@ -338,8 +337,5 @@
         .hidden-xs {
             display: none;
         }
-    }
-    .banner {
-        margin-top: -16px;
     }
 }

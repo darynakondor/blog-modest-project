@@ -132,6 +132,7 @@
   background-repeat: no-repeat;
   padding-top: 225px;
   padding-bottom: 250px;
+  margin-top: -24px;
 }
 .main .banner .title {
   margin-bottom: 33px;
@@ -143,6 +144,7 @@
   color: #ccd0d7;
   font-size: 16px;
   margin-bottom: 40px;
+  line-height: 24px;
 }
 .main .banner button {
   color: #ffffff;
@@ -321,9 +323,6 @@
             flex: 0 0 100%;
     max-width: 100%;
   }
-  .banner {
-    margin-top: -16px;
-  }
 }
 /* desktop => lg */
 @media (min-width: 1200px) {
@@ -433,8 +432,5 @@
   }
   .container .hidden-xs {
     display: none;
-  }
-  .banner {
-    margin-top: -16px;
   }
 }/*# sourceMappingURL=style.css.map */
