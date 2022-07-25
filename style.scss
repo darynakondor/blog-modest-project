@@ -102,13 +102,16 @@
     .banner {
         background-image: url("images-blog(modest)/slider.png");
         background-repeat: no-repeat;
-        
         .content {
             padding-top: 225px;
             padding-bottom: 250px;
             .title {
                 margin-bottom: 33px;
                 color: #ffffff;
+                h2 {
+                    border: none;
+                    padding: 0;
+                }
             }
             .paragraph {
                 color:  #ccd0d7;
@@ -234,8 +237,6 @@
     .team-members {
         padding-top: 86px;
         padding-bottom: 100px;
-        display: flex;
-        flex-wrap: wrap;
         .team-representative {
             &:hover .employee {
                 background-color: #3a454d;
@@ -253,10 +254,12 @@
             .photo {
                 display: flex;
                 justify-content: center;
+                img {
+                    max-width: 100%;
+                }
             }
             .employee {
                 background-color: #e1e6ea;
-                max-width: 263px;
                 height: 74px;
                 padding: 20px 0px 20px 20px;
                 margin: 0 auto;
@@ -313,6 +316,9 @@
         flex-wrap: wrap;
         .title {
             color: #ffffff;
+            h2 {
+                border-left: 10px solid #4e5a62;
+            }
         }
         .portfolio-item {
             height: 265px;
@@ -413,6 +419,45 @@
                 color: #8d8f92;
             }
         }
+    }
+    .features {
+        background-color: #3a454d;
+        padding-top: 92px;
+        padding-bottom: 123px;
+        .title {
+            color: #ffffff;
+            h2 {
+                border-left: 10px solid #4e5a62;
+            }
+        }
+        .post-item {
+            max-width: 100%;
+            .post-item-photo {
+                margin-bottom: 53px;
+                display: flex;
+                justify-content: center;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .description {
+                max-width: 100%;
+                .post-item-title {
+                    font-size: 18px;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                }
+                .post-item-paragraph {
+                    font-size: 16px;
+                    color: #dcdfe1;
+                }
+            }
+        }
+    }
+    h2 {
+        border-left: solid 10px #e1e6ea;
+        padding-left: 15px;
     }
 }
 
@@ -526,7 +571,7 @@
             .col-md-12 {
                 flex: 0 0 100%;
                 max-width: 100%;
-            }
+            }  
         }
         li {
             width: 14.285714%;
@@ -643,6 +688,9 @@
             flex: 0 0 100%;
             max-width: 100%;
         }
+        [class*="col-"] {
+            margin-bottom: 20px;
+         }  
         .logo {
             display: flex;
             justify-content: center;
@@ -674,6 +722,17 @@
             margin: 0 auto;
         }
     }
+    .features {
+        .description {
+            min-width: 290px;
+            margin: 0 auto;
+        }
+    }
+    .team-members {
+        .employee {
+            width: 263px;
+        }
+    }
 }
 @media (min-width: 460px) {
     .menu {
@@ -684,6 +743,11 @@
 @media (min-width: 390px) {
     .work {
         .title-photo {
+            width: 360px;
+        }
+    }
+    .features {
+        .description {
             width: 360px;
         }
     }
