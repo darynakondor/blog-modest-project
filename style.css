@@ -417,6 +417,42 @@
   border-radius: 3px;
   cursor: pointer;
 }
+.main .services {
+  padding-top: 86px;
+  padding-bottom: 70px;
+}
+.main .services .service-item {
+  margin-bottom: 95px;
+}
+.main .services .service-item .service-item-photo-1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  margin-bottom: 35px;
+}
+.main .services .service-item .cogs {
+  background-image: url("images-blog(modest)/cogs.png");
+}
+.main .services .service-item .pencil {
+  background-image: url("images-blog(modest)/pencil.png");
+}
+.main .services .service-item .mobile {
+  background-image: url("images-blog(modest)//mobile.png");
+}
+.main .services .service-item .clock {
+  background-image: url("images-blog(modest)/clock.png");
+}
+.main .services .service-item .service-item-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 17px;
+  color: #292f36;
+  text-transform: uppercase;
+}
+.main .services .service-item .service-item-paragraph {
+  text-align: center;
+  color: #8d8f92;
+}
 
 /* tablet => sm */
 @media (min-width: 768px) {
