@@ -496,6 +496,81 @@
   font-size: 16px;
   color: #dcdfe1;
 }
+.main .contact {
+  padding-top: 70px;
+  margin-bottom: -90px;
+}
+.main .contact .title {
+  color: #292f36;
+}
+.main .contact .google-maps {
+  margin-bottom: 60px;
+}
+.main .contact .title-contact {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #292f36;
+}
+.main .contact p {
+  margin-top: 35px;
+  color: #8d8f92;
+}
+.main .contact .contact-form {
+  min-height: 400px;
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  position: relative;
+  background-color: #ffffff;
+  top: -190px;
+}
+.main .contact .contact-form .input-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .contact .contact-form .input-contact div {
+  margin-right: 15px;
+}
+.main .contact .contact-form .input-contact div input {
+  border: none;
+  background-color: #eaeef1;
+  min-width: 240px;
+  height: 44px;
+  border-radius: 3px;
+}
+.main .contact .contact-form .textarea-contact {
+  margin-right: 15px;
+}
+.main .contact .contact-form .textarea-contact textarea {
+  width: 495px;
+  height: 165px;
+  border: none;
+  background-color: #eaeef1;
+  border-radius: 3px;
+}
+.main .contact .contact-form .button-contact {
+  max-width: 150px;
+  height: 44px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 30px;
+  background-color: #23b7a4;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.main .contact .contact-form p {
+  margin-left: 6px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 .main h2 {
   border-left: solid 10px #e1e6ea;
   padding-left: 15px;
@@ -852,6 +927,16 @@
   }
   .team-members .employee {
     width: 263px;
+  }
+  .contact .google-maps {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contact .input-contact div input {
+    width: 100%;
+  }
+  .contact .textarea-contact textarea {
+    max-width: 100%;
   }
 }
 @media (min-width: 460px) {
