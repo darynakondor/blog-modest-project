@@ -1046,23 +1046,22 @@
   .contact .textarea-contact textarea {
     max-width: 100%;
   }
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  .footer .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .copyright div {
+    line-height: 20px;
+  }
 }
-.footer {
-  padding-top: 30px;
-  padding-bottom: 25px;
-}
-.footer .copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.footer .copyright div {
-  line-height: 20px;
-}
-
 @media (min-width: 460px) {
   .menu {
     -webkit-box-pack: center;
